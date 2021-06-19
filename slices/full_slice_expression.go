@@ -5,8 +5,8 @@ import "fmt"
 func main() {
 	x := make([]int, 0, 5)
 	x = append(x, 1, 2, 3, 4)
-	y := x[:2]
-	z := x[2:]
+	y := x[:2:2]
+	z := x[2:4:4]
 	output(x, y, z)
 	y = append(y, 30, 40, 50)
 	// output(x, y, z)
